@@ -1,0 +1,139 @@
+body {
+  font-family: Bradley Hand, cursive;
+}
+ul {
+  list-style-type: none;
+}
+
+.container {
+  display: block;
+  position: absolute;
+  max-width: 600px;
+  height: 500px;
+  border: 5px solid black;
+  margin: 0 300px;
+  border-radius: 20px;
+  border-color: #0092ca;
+  border-width: 3px;
+  box-shadow: 10px 10px 10px;
+  background-color: #669dd1;
+}
+h3 {
+  font-size: 35px;
+  position: left;
+  top: 15px;
+  position: relative;
+  margin-bottom: 0;
+}
+h1 {
+  position: relative;
+  text-align: center;
+
+  font-size: 55px;
+  top: 0px;
+  left: 0px;
+}
+
+.row {
+  border: 2px solid #0092ca;
+  position: relative;
+  margin-top: 20px;
+  padding: 25px;
+  width: 200px;
+  left: 950px;
+  top: 0px;
+  border-radius: 20px;
+  box-shadow: 10px 10px 10px;
+  background-color: #669dd1;
+}
+.col {
+  font-size: 14px;
+  padding: 0px;
+}
+
+h2 {
+  text-align: left;
+  position: relative;
+  margin: 30px auto;
+  font-size: 15px;
+  padding: 0;
+}
+.temperature {
+  position: absolute;
+  text-align: center;
+  font-size: 25px;
+  top: 180px;
+  right: 60px;
+}
+.search {
+  position: relative;
+  font-size: 18px;
+  margin: 20px auto;
+  left: 350px;
+}
+
+button {
+  position: relative;
+  top: 0px;
+}
+
+.fon {
+  background-repeat: no-repeat;
+  min-height: 100%;
+  min-width: 640px;
+  width: 100%;
+  height: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+small {
+  color: black;
+  position: relative;
+  left: 500px;
+  font-size: 20px;
+}
+
+.temperature strong {
+  font-size: 80px;
+  font-weight: 350;
+  line-height: 5px;
+  padding: 0;
+  margin: 0;
+}
+.units {
+  margin-left: 0;
+}
+hr {
+  position: relative;
+  top: 100px;
+}
+h4 {
+  text-transform: capitalize;
+  position: absolute;
+  left: 40px;
+  top: 185px;
+}
+.float-left {
+  position: absolute;
+  left: 270px;
+  top: 100px;
+  border: 1px solid black;
+  width: 70px;
+  height: 70px;
+  border-radius: 90px;
+}
+.col7 {
+  position: absolute;
+  right: 0px;
+  top: 15px;
+  font-size: 30px;
+}
+.units .active {
+  color: black;
+  cursor: default;
+}
+.units .active:hover {
+  text-decoration: none;
+  color: black;
+}
