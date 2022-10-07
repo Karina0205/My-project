@@ -1,5 +1,6 @@
 body {
   font-family: Bradley Hand, cursive;
+  color: white;
 }
 ul {
   list-style-type: none;
@@ -24,6 +25,7 @@ h3 {
   top: 15px;
   position: relative;
   margin-bottom: 0;
+  color: black;
 }
 h1 {
   position: relative;
@@ -38,7 +40,7 @@ h1 {
   border: 2px solid #0092ca;
   position: relative;
   margin-top: 20px;
-  padding: 25px;
+  padding: 15px;
   width: 200px;
   left: 950px;
   top: 0px;
@@ -48,7 +50,7 @@ h1 {
 }
 .col {
   font-size: 14px;
-  padding: 0px;
+  padding: 0px 0px;
 }
 
 h2 {
@@ -89,9 +91,10 @@ button {
 }
 small {
   color: black;
-  position: relative;
+  position: absolute;
   left: 500px;
   font-size: 20px;
+  bottom: 100px;
 }
 
 .temperature strong {
@@ -100,6 +103,7 @@ small {
   line-height: 5px;
   padding: 0;
   margin: 0;
+  color: black;
 }
 .units {
   margin-left: 0;
@@ -113,6 +117,7 @@ h4 {
   position: absolute;
   left: 40px;
   top: 185px;
+  color: black;
 }
 .float-left {
   position: absolute;
@@ -122,6 +127,7 @@ h4 {
   width: 70px;
   height: 70px;
   border-radius: 90px;
+  box-shadow: 1px 2px 4px 4px white;
 }
 .col7 {
   position: absolute;
@@ -136,4 +142,108 @@ h4 {
 .units .active:hover {
   text-decoration: none;
   color: black;
+}
+.popcity1 {
+  width: 140px;
+  height: 50px;
+  border: 1px solid black;
+  position: absolute;
+  top: 280px;
+  left: 30px;
+  border-radius: 4px;
+  box-shadow: 1px 2px 4px 4px white;
+}
+.popcity2 {
+  width: 140px;
+  height: 50px;
+  border: 1px solid black;
+  position: absolute;
+  top: 280px;
+  left: 230px;
+  border-radius: 4px;
+  box-shadow: 1px 2px 4px 4px white;
+}
+.popcity3 {
+  width: 140px;
+  height: 50px;
+  border: 1px solid black;
+  position: absolute;
+  top: 280px;
+  left: 430px;
+  border-radius: 4px;
+  box-shadow: 1px 2px 4px 4px white;
+}
+.popcity4 {
+  width: 140px;
+  height: 50px;
+  border: 1px solid black;
+  position: absolute;
+  top: 350px;
+  left: 30px;
+  border-radius: 4px;
+  box-shadow: 1px 2px 4px 4px white;
+}
+.popcity5 {
+  width: 140px;
+  height: 50px;
+  border: 1px solid black;
+  position: absolute;
+  top: 350px;
+  left: 230px;
+  border-radius: 4px;
+  box-shadow: 1px 2px 4px 4px white;
+}
+.popcity6 {
+  width: 140px;
+  height: 50px;
+  border: 1px solid black;
+  position: absolute;
+  top: 350px;
+  left: 430px;
+  border-radius: 4px;
+  box-shadow: 1px 2px 4px 4px white;
+}
+.popcity7 {
+  width: 140px;
+  height: 50px;
+  border: 1px solid black;
+  position: absolute;
+  top: 420px;
+  left: 30px;
+  border-radius: 4px;
+  box-shadow: 1px 2px 4px 4px white;
+}
+.popcity8 {
+  width: 140px;
+  height: 50px;
+  border: 1px solid black;
+  position: absolute;
+  top: 420px;
+  left: 230px;
+  border-radius: 4px;
+  box-shadow: 1px 2px 4px 4px white;
+}
+.popcity9 {
+  width: 140px;
+  height: 50px;
+  border: 1px solid black;
+  position: absolute;
+  top: 420px;
+  left: 430px;
+  border-radius: 4px;
+  box-shadow: 1px 2px 4px 4px white;
+}
+.capital {
+  display: block;
+  text-align: center;
+  font-size: 20px;
+  margin: 5px auto;
+}
+a {
+  color: black;
+}
+.week-temperature {
+  position: absolute;
+  right: 10px;
+  top: 15px;
 }
