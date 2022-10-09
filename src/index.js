@@ -17,6 +17,20 @@ let days = [
 let day = days[now.getDay()];
 h2.innerHTML = `Today is ${date} ${day}, ${hours}:${minutes}`;
 
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+
+  forecastElement.innerHTML = `
+  <div class="row">
+    <div class="col-2">
+      <div class="weather-forecast-date">Monday</div>
+      <div class="weather-forecast-temperatures">
+        <span class="week-temperature">20°C</span>
+      </div>
+    </div>
+  </div>`;
+}
+
 function displayTemperature(response) {
   console.log(response.data);
   let temperatureElement = document.querySelector("#temperature");
@@ -25,10 +39,10 @@ function displayTemperature(response) {
   let descriptionElement = document.querySelector("#description");
   let iconElement = document.querySelector("#icon");
   let cityElement = document.querySelector("#city");
+
   celsiusTemperature = response.data.main.temp;
   temperatureElement.innerHTML = Math.round(celsiusTemperature);
   cityElement.innerHTML = response.data.name;
-
   humidityElement.innerHTML = response.data.main.humidity;
   windElement.innerHTML = Math.round(response.data.wind.speed);
   descriptionElement.innerHTML = response.data.weather[0].description;
@@ -68,6 +82,18 @@ function displayCelsius(event) {
   let temperatureElement = document.querySelector("#temperature");
   temperatureElement.innerHTML = Math.round(celsiusTemperature);
 }
+
+function parisWeather(event) {
+  event.preventDefault();
+  let apiKey = "2c50f2cbf3eedd8d4d21b82ad8958183";
+  let city = "Paris";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(displayTemperature);
+}
+
+let parisElement = document.querySelector("#parisCity");
+parisElement.addEventListener("click", parisWeather);
+
 let celsiusTemperature = null;
 
 let form = document.querySelector("#search-form");
@@ -79,4 +105,21 @@ fahrenheit.addEventListener("click", displayFahrenheit);
 let celsius = document.querySelector("#celsius");
 celsius.addEventListener("click", displayCelsius);
 
+function handleGeolocation(event) {
+  event.preventDefault();
+  navigator.geolocation.getCurrentPosition(showPosition);
+}
+function showPosition(position) {
+  let latitude = position.coords.latitude;
+  let longitude = position.coords.longitude;
+  let apiKey = "2c50f2cbf3eedd8d4d21b82ad8958183";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=metric`;
+  console.log(apiUrl);
+  axios.get(apiUrl).then(displayTemperature);
+}
+
+let currentButton = document.querySelector("#location");
+currentButton.addEventListener("click", handleGeolocation);
+
 search("Cluny");
+displayForecast();
