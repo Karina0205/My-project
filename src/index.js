@@ -90,9 +90,88 @@ function parisWeather(event) {
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
   axios.get(apiUrl).then(displayTemperature);
 }
-
-let parisElement = document.querySelector("#parisCity");
+function kyivWeather(event) {
+  event.preventDefault();
+  let apiKey = "2c50f2cbf3eedd8d4d21b82ad8958183";
+  let city = "Kyiv";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(displayTemperature);
+}
+function madridWeather(event) {
+  event.preventDefault();
+  let apiKey = "2c50f2cbf3eedd8d4d21b82ad8958183";
+  let city = "Madrid";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(displayTemperature);
+}
+function berlinWeather(event) {
+  event.preventDefault();
+  let apiKey = "2c50f2cbf3eedd8d4d21b82ad8958183";
+  let city = "Berlin";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(displayTemperature);
+}
+function londonWeather(event) {
+  event.preventDefault();
+  let apiKey = "2c50f2cbf3eedd8d4d21b82ad8958183";
+  let city = "London";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(displayTemperature);
+}
+function brusselsWeather(event) {
+  event.preventDefault();
+  let apiKey = "2c50f2cbf3eedd8d4d21b82ad8958183";
+  let city = "Brussels";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(displayTemperature);
+}
+function budapestWeather(event) {
+  event.preventDefault();
+  let apiKey = "2c50f2cbf3eedd8d4d21b82ad8958183";
+  let city = "Budapest";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(displayTemperature);
+}
+function tbilisiWeather(event) {
+  event.preventDefault();
+  let apiKey = "2c50f2cbf3eedd8d4d21b82ad8958183";
+  let city = "Tbilisi";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(displayTemperature);
+}
+function romeWeather(event) {
+  event.preventDefault();
+  let apiKey = "2c50f2cbf3eedd8d4d21b82ad8958183";
+  let city = "Rome";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(displayTemperature);
+}
+let parisElement = document.querySelector("#popcity1");
 parisElement.addEventListener("click", parisWeather);
+
+let kyivElement = document.querySelector("#popcity2");
+kyivElement.addEventListener("click", kyivWeather);
+
+let madridElement = document.querySelector("#popcity3");
+madridElement.addEventListener("click", madridWeather);
+
+let berlinElement = document.querySelector("#popcity4");
+berlinElement.addEventListener("click", berlinWeather);
+
+let londonElement = document.querySelector("#popcity5");
+londonElement.addEventListener("click", londonWeather);
+
+let brusselsElement = document.querySelector("#popcity6");
+brusselsElement.addEventListener("click", brusselsWeather);
+
+let budapestElement = document.querySelector("#popcity7");
+budapestElement.addEventListener("click", budapestWeather);
+
+let tbilisiElement = document.querySelector("#popcity8");
+tbilisiElement.addEventListener("click", tbilisiWeather);
+
+let romeElement = document.querySelector("#popcity9");
+romeElement.addEventListener("click", romeWeather);
 
 let celsiusTemperature = null;
 

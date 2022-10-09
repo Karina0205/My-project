@@ -17,7 +17,8 @@ ul {
   border-color: #0092ca;
   border-width: 3px;
   box-shadow: 10px 10px 10px;
-  background-color: #669dd1;
+  background-color: black;
+  opacity: 0.6;
 }
 h3 {
   font-size: 35px;
@@ -25,7 +26,7 @@ h3 {
   top: 15px;
   position: relative;
   margin-bottom: 0;
-  color: black;
+  color: white;
 }
 h1 {
   position: relative;
@@ -88,9 +89,10 @@ button {
   position: fixed;
   top: 0;
   left: 0;
+  
 }
 small {
-  color: black;
+  color: white;
   position: relative;
   left: 500px;
   font-size: 20px;
@@ -103,7 +105,7 @@ small {
   line-height: 5px;
   padding: 0;
   margin: 0;
-  color: black;
+  color: white;
 }
 .units {
   margin-left: 0;
@@ -117,31 +119,31 @@ h4 {
   position: absolute;
   left: 40px;
   top: 185px;
-  color: black;
+  color: white;
 }
 .float-left {
   position: absolute;
   left: 270px;
   top: 100px;
-  border: 1px solid black;
+  border: 1px solid white;
   width: 70px;
   height: 70px;
   border-radius: 90px;
   box-shadow: 1px 2px 4px 4px white;
 }
-.col7 {
+.col7{
   position: absolute;
   right: 0px;
   top: 15px;
   font-size: 30px;
 }
 .units .active {
-  color: black;
+  color: white;
   cursor: default;
 }
 .units .active:hover {
   text-decoration: none;
-  color: black;
+  color: white;
 }
 .cityParis {
   width: 140px;
@@ -153,7 +155,7 @@ h4 {
   border-radius: 4px;
   box-shadow: 1px 2px 4px 4px white;
 }
-.popcity2 {
+.cityKyiv {
   width: 140px;
   height: 50px;
   border: 1px solid black;
@@ -163,7 +165,7 @@ h4 {
   border-radius: 4px;
   box-shadow: 1px 2px 4px 4px white;
 }
-.popcity3 {
+.cityMadrid {
   width: 140px;
   height: 50px;
   border: 1px solid black;
@@ -173,7 +175,7 @@ h4 {
   border-radius: 4px;
   box-shadow: 1px 2px 4px 4px white;
 }
-.popcity4 {
+.cityBerlin {
   width: 140px;
   height: 50px;
   border: 1px solid black;
@@ -183,7 +185,7 @@ h4 {
   border-radius: 4px;
   box-shadow: 1px 2px 4px 4px white;
 }
-.popcity5 {
+.cityLondon {
   width: 140px;
   height: 50px;
   border: 1px solid black;
@@ -193,7 +195,7 @@ h4 {
   border-radius: 4px;
   box-shadow: 1px 2px 4px 4px white;
 }
-.popcity6 {
+.cityBrussels {
   width: 140px;
   height: 50px;
   border: 1px solid black;
@@ -203,7 +205,7 @@ h4 {
   border-radius: 4px;
   box-shadow: 1px 2px 4px 4px white;
 }
-.popcity7 {
+.cityBudapest {
   width: 140px;
   height: 50px;
   border: 1px solid black;
@@ -213,7 +215,7 @@ h4 {
   border-radius: 4px;
   box-shadow: 1px 2px 4px 4px white;
 }
-.popcity8 {
+.cityTbilisi {
   width: 140px;
   height: 50px;
   border: 1px solid black;
@@ -223,7 +225,7 @@ h4 {
   border-radius: 4px;
   box-shadow: 1px 2px 4px 4px white;
 }
-.popcity9 {
+.cityRome {
   width: 140px;
   height: 50px;
   border: 1px solid black;
@@ -246,4 +248,7 @@ a {
   position: absolute;
   right: 10px;
   top: 15px;
+}
+.fahrenheit{
+  color: white;
 }
