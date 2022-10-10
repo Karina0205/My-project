@@ -1,6 +1,6 @@
 body {
   font-family: "Google Sans", arial, sans-serif;
-  color: white;
+ color: white;
 }
 ul {
   list-style-type: none;
@@ -41,13 +41,16 @@ h1 {
   border: 2px solid #0092ca;
   position: relative;
   margin-top: 20px;
-  padding: 15px;
-  width: 200px;
+  padding: 30px 10px 0px 10px;
+  text-decoration: black;
+  width: 140px;
+  height: 500px;
   left: 950px;
   top: 0px;
   border-radius: 20px;
   box-shadow: 10px 10px 10px;
-  background-color: #669dd1;
+  background-color: black;
+  opacity: 0.6;
 }
 .col {
   font-size: 14px;
@@ -94,9 +97,11 @@ button {
 small {
   color: white;
   position: relative;
-  left: 500px;
-  font-size: 20px;
-  top: 500px;
+  left: 450px;
+  font-size: 12px;
+  top: 0px;
+  
+  
 }
 
 .temperature strong {
@@ -136,6 +141,8 @@ h4 {
   right: 0px;
   top: 15px;
   font-size: 30px;
+  opacity: 1;
+  text-decoration: white;
 }
 .units .active {
   color: white;
@@ -244,11 +251,16 @@ h4 {
 a {
   color: black;
 }
-.week-temperature {
-  position: absolute;
-  right: 10px;
-  top: 15px;
-}
+
 .fahrenheit{
   color: white;
+}
+.col-2{
+  height:55px;
+  width: 180px;
+  border: 1px solid black;
+  background: white;
+  border-radius: 15px;
+  color: black;
+  font-weight: 20px;
 }
